@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        font-size:medium;
+        margin: 0;
+        padding: 10px;
+        background-color: #f8f4f4; /* Set a light background color */
+    }
+    .page {
+        max-width: 1000px;
+        margin: auto;
+        background-color: #f6f0f0; /* Set page background color */
+        padding: 10px; /* Add padding for spacing */
+        box-sizing: border-box;
+        border: 1px;; /* Add border for page */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        size:legal portrait;
+        margin: 1cm;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 30px; /* Add some space below the header */
+    }
+    .bio-data {
+        font-size: 35px;
+        margin: 0;
+        color: #000000; /* Darken the text color */
+    }
+    .profile {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px; /* Add some space above the image */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px; /* Add some space below each table */
+    }
+    th, td {
+        padding: 5px;   
+        border: 1px solid #000000; /* Add border to cells */
+    }
+    th {
+        background-color: #b88080; /* Light background color for table headers */
+    }
+    input[type="text"],
+    input[type="email"] {
+        border: none;
+        border-bottom: 2px; /* Lighten the input border color */
+        background-color: transparent;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        outline: none;
+        text-align: left;
+    }
+    .content {
+       
+        text-align: center;
+    }
+    .declaration {
+        margin-top: 0px; /* Add some space above the declaration */
+    }
+    h5 {
+        margin: 0; /* Remove default margins */
+    }
+    p {
+        margin: 5px 0; /* Adjust margin for paragraphs */
+    }
+    .signature {
+        border-top: 1px solid #000000; /* Add border on top of signature */
+        padding-top: 10px; /* Add space above signature */
+    }
+</style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <h1 class="bio-data"><b>BIO-DATA</b></h1>
+            <div class="picture-box">
+                <img src="profile-img.jpg" alt="" class="profile">
+            </div>
+        </div>
+      
+        <table>
+            <tr>
+                <th colspan="13">I.PERSONAL DATA</th>
+            </tr>
+            
+            <tr>
+                <td><b> Surname </b> </td> 
+                <td colspan="13"><input type="text" name="Surname" value="Bango"></td>
+
+            </tr>
+            <tr>
+                <td><b> First Name  </b> </td>
+                <td colspan="7"><input type="text" name="First" value="Althea Marielle"></td>
+                <td > <b>Name Extension (Jr., Sr.) </b></td>
+                <td colspan="4"><input type="text" name="extension" value="N/A"></td>
+            </tr>
+            <tr>
+                <td> <b>Middle Name </b> </td>
+                <td colspan="13"><input type="text" name="Middle" value="Valenzuna"></td>
+
+            </tr>
+            <tr>
+                <td> <b>Date of Birth  (mm/dd/yyy) </b></td>
+                <td colspan="10"><input type="text" name="BIRTH" value="October 27, 2004"></td>
+                <td><b> Citizenship if holder of dual citizenship please indicate the details </b> </td>
+                <td><input type="text" name="citizenship" value="Filipino"></td>
+            </tr>
+            <tr>
+            <td>  <b> Place of Birth </b> </td>
+                <td colspan="13"><input type="text" name="Birth" value="Lumbal, Vincenzo Sagun, Zamboanga Del Sur"></td>
+            </tr>
+            <tr>
+                 <td> <b> Gender  </b></td> 
+                <td colspan="13"><input type="text" name="Sex" value="Non-Binary"></td>
+            </tr>
+            <tr>
+                <td> <b>  Civil Status  </b></td>
+                <td colspan="13"><input type="email" name="Civil" value="Single"></td>
+            </tr>
+            <tr>
+               <td><b> Residential Address </b></td>  
+                <td colspan="10"><input type="text" name="Residential" value="Lumbal, Vincenzo Sagun, Zamboanga Del Sur"></td>
+                 <td>  <b>Zip Code </b></td> 
+                <td ><input type="text" name="zip_code" value="7036"></td>
+            </tr>
+            <tr>
+                 <td> <b>  Height </b> </td> 
+                <td colspan="7"><input type="text" name="height" value="5"></td>
+                  <td><b> Weight </b></td>
+                <td colspan="4"><input type="text" name="weight" value="40 kls"></td>
+            </tr>
+            <tr>
+                <td> <b>Blood Type </b></td>
+                <td colspan="13"><input type="text" name="Blood" value="N/A"></td>
+                
+            </tr>  
+            <tr>
+
+            <td> <b> Permanent Address </b></td>
+            <td colspan="13"><input type="text" name="Permanent" value="Purok Sampaguita, Lumbal, Vincenzo Sagun, Zamboanga Del Sur"></td>   
+        </tr>
+        <tr>
+           <td> <b>GSIS ID No. </b></td>
+           <td colspan="13"><input type="text" name="GSIS" value="N/A"></td>
+       </tr>
+       <tr>
+            <td> <b> Pag-Ibig ID No.</b></td>
+           <td colspan="13"><input type="text" name="Pag-Ibig" value="N/A"></td>
+       </tr>
+       <tr>
+         <td > <b>PhilHealth No. </b> </td>
+        <td colspan="13"><input type="text" name="PhilHealth" value="N/A"></td>
+       </tr>
+
+       <tr>
+        <td > <b> SSS  </b></td>
+         <td colspan="13"><input type="text" name="SSS" value="N/A"></td>
+    </tr><tr>
+        <td > <b>  TIN </b> </td>
+        <td colspan="13"><input type="text" name="TIN" value="N/A"></td>
+    </tr>
+    <tr>
+        <td > <b>Agency Employee No. </b></td>
+        <td colspan="13"><input type="text" name="Agency" value="N/A"></td>
+    </tr>
+    <tr>
+        <td><b> Telephone </b></td>
+        <td colspan="7"><input type="text" name="telephone" value="N/A"></td>
+        <td><b> Cellphone </b></td>
+        <td colspan="4"><input type="text" name="cellphone"value="09911290173"></td>
+    </tr>
+    <tr>
+        <td><b>  Email Address </b> </td>
+        <td colspan="13"><input type="email" name="email" value="theabango3@gmail.com"></td><br><br>
+        
+    </tr>
+
+    
+</table>
+    </div>   
+    <div class="page">
+<table>
+    <th colspan="9"> II. FAMILY BACKGROUND</th>
+    <tr>
+        <tr>
+            <td> <b>Spouse's Surname </b></td>
+            <td colspan="9"><input type="text" name="Spouse's Surname" value="N/A"></td>
+        </tr>
+        <tr>
+            <td> <b>First Name </b></td>
+            <td colspan="6"><input type="text" name="First Name" value="N/A"></td>
+            <td> <b> Name Extension (Jr., Sr.) </b></td>
+            <td ><input type="text" name="extension" value="N/A"></td>
+        </tr>
+        <tr>
+            <td>  <b>Middle Name </b></td>
+            <td colspan="9"><input type="text" name="Middle Name" value="N/A"></td>
+
+        </tr>
+        <tr>
+            <td><b> Occupation  </b> </td>
+            <td colspan="9"><input type="text" name="Occupation" value="N/A"></td>
+
+        </tr>
+        <tr>
+            <td> <b> Employer/Business Name </b></td>
+            <td colspan="9"><input type="text" name="Employer" value="N/A"></td>
+
+        </tr>
+        <tr>
+            <td> <b> Business Address </b></td>
+            <td colspan="9"><input type="text" name="Business Address" value="N/A"></td>
+
+        </tr>
+        <tr>
+            <td> <b> Telephone No. </b></td>
+            <td colspan="9"><input type="text" name="Telephone" value="N/A"></td>
+
+        </tr>
+        <tr>
+            <td><b> Name of Children </b></td>
+            <td colspan="4"><input type="text" name="children_names" value="N/A"></td>
+            <td><b>  Date of Birth </b></td>
+            <td colspan="3"><input type="text" name="date_of_birth" value="N/A"></td>
+    </tr>
+    <tr>
+        <td> <b>  Father's Surname </b></td>
+        <td colspan="9"><input type="text" name="Father" value="Bango"></td>
+
+    </tr>
+    <tr>
+        <td> <b> First Name </b></td>
+        <td colspan="6"><input type="text" name="First" value="John"></td>
+        <td > <b> Name Extension (Jr., Sr.) </b></td>
+        <td ><input type="text" name="extension" value="N/A"></td>
+    </tr>
+    <tr>
+        <td> <b> Middle Name </b></td>
+        <td colspan="9"><input type="text" name="full_name" value="Salahop"></td>
+
+    </tr>
+    <tr>
+        <td> <b>  Mother's Maiden Name  </b></td>
+        <td colspan="9"><input type="text" name="Maiden" value="Valenzuna"></td>
+
+    </tr>
+    <tr>
+        <td> <b> Surname </b></td>
+        <td colspan="9"><input type="text" name="Surname" value="Bango"></td>
+
+    </tr>
+    <tr>
+        <td> <b> First Name </b></td>
+        <td colspan="9"><input type="text" name="First" value="Mailyn"></td>
+       
+    </tr>
+    <tr>
+        <td> <b> Middle Name </b></td>
+        <td colspan="9"><input type="text" name="Middle" value="Lucero"></td>
+
+    </tr>
+    </tr>
+   
+</table>
+           
+        </table>
+        <table>
+            <th colspan="9"> III. EDUCATIONAL BACKGROUND</th>
+            <tr>
+                <td><b> Elementary </b></td>
+                <td colspan="5"><input type="text" name="Education" value="Lumbal Elementary School "></td>
+                <td><b> Basic Education/Degree/Course </b></td>
+                <td><input type="text" name="date" value="Grade 1 - Grade 6"></td>
+                </tr>
+                <tr>
+                
+                <td colspan="2"> <b> Period of Attendance </b></td>
+                <td> <b>From </b></td>
+                <td colspan="2"><input type="text" name="From" value="N/A"></td>
+                <td> <b>To </b></td>
+                <td colspan="2"><input type="text" name="To" value="N/A"></td>
+            </tr>
+            <tr>
+
+                <td><b>  High Level/Units Earned </b> </td>              
+                <td colspan="2"><input type="text" name="Level" value="N/A"></td>
+                <td> <b> Year Graduated </b> </td>
+                <td colspan="2" ><input type="text" name="Year" value="2011-2016"></td>
+                <td> <b>Scholarship/Academic Honors Awards </b></td>
+                <td ><input type="text" name="Scholarship" value="N/A"></td>
+                
+            </tr>
+            <tr>
+                <td> <b>Secondary</b></td>
+                <td colspan="5"><input type="text" name="Education" value="Kabatan National High School "></td>
+                <td> <b> Basic Education/Degree/Course </b> </td>
+                <td><input type="text" name="Degree" value="Grade 7 - Grade 8"></td>
+                </tr>
+                <tr>
+                <td colspan="2"> <b> Period of Attendance </b></td>
+                <td> <b>From </b></td>
+                <td colspan="2"><input type="text" name="From" value="N/A"></td>
+                <td> <b>To </b></td>
+               <td colspan="2"><input type="text" name="To" value="N/A"></td>
+               
+            </tr>
+            <tr>
+                <td> <b> High Level/Units Earned </b></td>              
+                <td colspan="2"><input type="text" name="Level" value="N/A"></td>
+                <td> <b> Year Graduated </b></td>
+                <td colspan="2" ><input type="text" name="Year" value="2017-2019"></td>
+                <td> <b> Scholarship/Academic Honors Awards </b></td>
+                <td ><input type="text" name="N/A" value="N/A"></td>
+                
+            </tr>
+            <tr>
+                <td> <b>Vocational/ Trade Course </b></td>
+                <td colspan="5"><input type="text" name="Education" value="N/A"></td>
+                <td><b> Basic Education/Degree/Course  </b></td>
+                <td><input type="text" name="date" value="N/A"></td>
+                </tr>
+                <tr>
+                <td colspan="2"> <b> Period of Attendance </b></td>
+                <td> <b>From </b></td>
+                <td colspan="2"><input type="text" name="From" value="N/A"></td>
+                <td> <b>To </b></td>
+               <td colspan="2"><input type="text" name="To" value="N/A"></td>
+            
+            <tr>
+                <td><b> High Level/Units Earned</b> </td>              
+                <td colspan="2"><input type="text" name="Level" value="N/A"></td>
+                <td> <b> Year Graduated </b></td>
+                <td colspan="2" ><input type="text" name="Year" value="N/A"></td>
+                <td><b> Scholarship/Academic Honors Awards  </b></td>
+                <td ><input type="text" name="N/A" value="N/A"></td>
+                
+            </tr>
+       
+    
+            <tr>
+                <td><b>College </b></td>
+                <td colspan="5"><input type="text" name="College" value="J.H Cerilles State College"></td>
+                <td><b> Basic Education/Degree/Course</b> </td>
+                <td><input type="text" name="Degree" value="Second Year"></td>
+                </tr>
+                <tr>
+                <td colspan="2"> <b> Period of Attendance </b></td>
+                <td> <b>From </b></td>
+                <td colspan="2"><input type="text" name="From" value="N/A"></td>
+                <td> <b>To </b></td>
+               <td colspan="2"><input type="text" name="To" value="N/A"></td>
+               
+            </tr>
+            <tr>
+                <td><b> High Level/Units Earned</b> </td>              
+                <td colspan="2"><input type="text" name="Level" value="N/A"></td>
+                <td> <b> Year Graduated </b></td>
+                <td colspan="2" ><input type="text" name="Year" value="N/A"></td>
+                <td><b> Scholarship/Academic Honors Awards  </b></td>
+                <td ><input type="text" name="Scholarship" value="N/A"></td>
+             
+                
+            </tr>
+            <tr>
+                <td> <b>Graduate Studies </b></td>
+                <td colspan="5"><input type="text" name="Education" value="N/A "></td>
+                <td> Basic Education/Degree/Course :</td>
+                <td><input type="text" name="Degree" value="N/A "></td>
+                </tr>
+                <tr>
+                <td colspan="2"> <b> Period of Attendance </b></td>
+                <td> <b>From </b></td>
+                <td colspan="2"><input type="text" name="From" value="N/A"></td>
+                <td> <b>To </b></td>
+               <td colspan="2"><input type="text" name="To" value="N/A"></td>
+                   
+                
+                
+            </tr>
+            <tr>
+                <td><b> High Level/Units Earned</b> </td>              
+                <td colspan="2"><input type="text" name="Level" value="N/A"></td>
+                <td> <b> Year Graduated </b></td>
+                <td colspan="2" ><input type="text" name="Year" value="2019-2022"></td>
+                <td><b> Scholarship/Academic Honors Awards  </b></td>
+                <td ><input type="text" name="Scholarship" value="N/A"></td>
+            </tr>
+            <tr>
+                <td><b>Signature </b></td>
+                <td colspan="3"><input type="text" name="signature" value=""></td>
+                <td><b> Date </b></td>
+                <td colspan="3" ><input type="text" name="date" value=""></td>
+     <table>
+            <th colspan="9"> IV. CIVIL SERVICE ELIGIBILITY</th>
+           <tr>
+            <td> <b>   Career Service/RA 1080(Board/BAR) under <br>Special Laws/CES/CSEE </br><br> Eligibility/ Driver's License </b></br></td>
+            <td colspan="3"><input type="text" name="Career" value="N/A"></td>
+            <td> <b> Rating (If Applicable) </b></td>
+            <td ><input type="text" name="Rating" value="N/A"></td>
+           </tr>
+           <tr>
+            <td>  <b> Date of Examination / Conferment </b></td>
+            <td colspan="3"><input type="text" name="date" value="N/A"></td>
+            <td> <b> Place of Examination/Conferment </b></td>
+            <td ><input type="text" name="Place" value="N/A"></td>
+           </tr>
+           <tr>
+            <td><b> License (If applicable) </b></td>
+            <td ><input type="text" name="License" value="N/A"></td>
+            <td> <b>  Number </b></td>
+            <td ><input type="text" name="Number" value="N/A"></td>
+            <td> <b> Date of Validity </b></td>
+            <td ><input type="text" name="date" value="N/A"></td>
+           </tr>
+
+           
+        </table>
+
+    
+        <table>
+            <th colspan="13">V. WORK EXPERIENCE <br>(Include private employment. Start form your recent work). Description of duties should be indicate in the attached Work Experience sheet</br></th>
+            <tr>
+                <td colspan="3"> <b>  Inclusive Dates (mm/dd/yyyy) </b></td>
+                <td > <b> From </b></td>
+                <td colspan="6"><input type="text" name="From" value="2016-2018"></td>
+                <td> <b>To </b></td>
+                <td colspan="4"><input type="text" name="To" value="N/A"></td>
+            </tr>
+            <tr>
+                <td> <b> Position <br> (Write in full/ Do not abbreviate) </b></br></td>
+                <td colspan="13"><input type="text" name="Position" value="Production Worker"></td>
+             
+            </tr>
+            <tr>
+                <td><b>  Department / Agency/ Office / Company:<br> (Write in full/ Do not abbreviate) </b></br></td>
+                <td colspan="13"><input type="text" name="Agency" value="Esynergy"></td>
+             
+            </tr>
+            <tr>
+                <td> <b> Monthly Salary </b></td>
+                <td colspan="8"><input type="text" name="Salary" value="9000 to 10000"></td>
+                <td> <b> Salary/ Job/ Pay Grade (if applicable) & Step (Format "00-0)/ Increment </b></td>
+                <td colspan="8"><input type="text" name="Pay" value="N/A"></td>
+
+             
+            </tr>
+            <tr>
+                <td> <b> Status of Appoinment </b></td>
+                <td colspan="8"><input type="text" name="status" value="N/A"></td>
+                <td> <b>Gov't Service (Y/N) </b></td>
+                <td colspan="8"><input type="text" name="Service" value="N/A"></td>
+            </tr>
+            <tr>
+                <td> <b>Signature </b></td>
+                <td colspan="8"><input type="text" name="signature" value=""></td>
+                <td><b> Date </b></td>
+                <td colspan="8" ><input type="text" name="date" value=""></td>
+            </tr>
+           
+        </table>
+    </div>
+    <div class="page">
+        <table>
+            <th colspan="13">VI. Voluntary Work or Inolvement in Civic / Non-Government / People / Voluntary Organization  </br></th>
+            <tr>
+                <tr>
+                    <td><b>  Name & Address of Organization <br> (Write in full/ Do not abbreviate) </b></br></td>
+                    <td colspan="13"><input type="text" name="Organization" value="N/A"></td>
+                 
+                </tr>
+                <td colspan="4"> <b>Inclusive Dates (mm/dd/yyyy) </b></td>
+                <td> <b>From </b></td>
+                <td colspan="4"><input type="text" name="From" value="N/A"></td>
+                <td> <b>To </b></td>
+                <td colspan="3"><input type="text" name="To" value="N/A"></td>
+            </tr>
+          
+            <tr>
+                <td><b> Number of Hours </b></td>
+                <td colspan="8"><input type="text" name="Hours" value="N/A"></td>
+                <td> <b>Position / Nature of Work </b></td>
+                <td colspan="8"><input type="text" name="Position" value="N/A"></td>
+             
+            </tr>
+            
+        </table>
+        <table>
+            <th colspan="13"> VII. Learning and Development (L&D) Interventions/Traning Programs Attended<br> (Start form the most recent L&D/traning programs and include the relevant L&Dtraning raken for the last five(5) Years for Division Chief/ Executive/Managerial positions) </b></br></th>
+            <tr>
+                <tr>
+                    <td> <b>Title of Learning and Development Interventions/Traning Programs : <br> (Write in full/ Do not abbreviate)</br></td>
+                    <td colspan="13"><input type="text" name="Title" value="N/A"></td>
+                </tr>
+                <td colspan="4"> <b>Inclusive Dates (mm/dd/yyyy) </b></td>
+                <td> <b>From </b></td>
+                <td colspan="4"><input type="text" name="From" value="N/A"></td>
+                <td> <b>To </b></td>
+                <td colspan="3"><input type="text" name="To" value="N/A"></td>
+               
+            </tr>
+          
+            <tr>
+                <td><b> Number of Hours </b></td>
+                <td colspan="8"><input type="text" name="Hours" value="N/A"></td>
+                <td> <b> Type of LD (Managerial/Supervisor/Techniacal.etc) </b></td>
+                <td colspan="8"><input type="text" name="LD" value="N/A"></td>
+             
+            </tr>
+            <tr>
+                <td> <b>Conducted/ Sponsored By  <br> (Write in full/ Do not abbreviate) </b></br></td>
+                <td colspan="13"><input type="text" name="Sponsored" value="N/A"></td>
+             
+            </tr>
+            
+        </table>
+        <table>
+            <th colspan="13"> VIII. OTHER INFORMATION</th>
+            <tr>
+                <tr>
+                    <td> <b>  Special Skills and Hobbies </b></br></td>
+                    <td colspan="13"><input type="text" name="Skills" value="Reading"></td>
+                </tr>
+                <tr>
+                    <td><b>  Non- Academic Distinction / Recognation  <br> (Write in full/ Do not abbreviate) </b></br></td>
+                    <td colspan="13"><input type="text" name="Recognation" value="N/A"></td>
+                </tr>
+              
+            <tr>
+                <td><b> Membership in Association/Organization  <br> (Write in full/ Do not abbreviate)</b></br></td>
+                <td colspan="13"><input type="text" name="Membership" value="N/A"></td>
+             
+            </tr>
+            <tr>
+                <td><b>Signature </b></td>
+                <td colspan="3"><input type="text" name="Signature" value=""></td>
+                <td><b> Date</b> </td>
+                <td colspan="3" ><input type="text" name="date" value=""></td>
+  
+                 </tr>  
+                </table>    
+        <tr>
+            <td><b><br> Are you related by consanguinity or affinity to the appointing or recommending authority, or tochief of burue or ofiice of the person who has immediate supervision ove you in the Bureau or Department where you will be appointed.</b></td></br>
+
+          </tr>
+                <td><br>A. Within the third degree? </td>
+                <td> If Yes, give details</td>
+                 <br> <td><b>NO </b></td>  
+            <td colspan="13"><input type="text" name="A" value=""></td>
+            B. Within the fourth degree (for Local Government Unit - Career Employees)?</td>
+            <td> If Yes, give details</td>
+            <br> <td><b>NO </b></td>  
+            <td colspan="13"><input type="text" name="B" value=""></td>
+            <td> C. Have you ever been found guilty of any administrative offense?</td></td>  
+                 <br> <td> If Yes, give details</td></br>
+                 <br> <td><b>NO </b></td>
+            <td colspan="13"><input type="text" name="A" value=""></td> <p>D. Have you been criminally charged before any court?  <br> 
+                 <td> If Yes, give details</td>
+                <br> <td><b>NO </b></td>   </td></br>
+                <td colspan="13"><input type="text" name="B" value=""></td></p></td>     
+        </tr>
+        <tr>
+            <td>Have you ever been convicted of any crime or violation of any law, decree,ordinance or regulation by any court or tribunal?</td>  <br>   
+             <td> If Yes, give details</td>
+            <br> <td><b>NO </b></td>  
+            <td colspan="13"><input type="text" name="36" value=""></td>      
+        </tr>
+        <tr>
+            <td> Have you ever been separated from the service in any of the following modes: resignation, retirement, dropped from the rolls, dismissal, termination,end of term,finished contract or phased out (obolition) in the public or private sector?<br><br>   
+                <td> If Yes, give details</td>
+            <br> <td><b>NO </b></td>   
+            <td colspan="13"><input type="text" name="37" value=""></td>
+ </tr>
+        <tr>
+            <td> A. Have you ever been a candidate in a national or local election held withinthe last year (except Barangay election)<p>   
+                 <td> If Yes, give details</td>
+                <br> <td><b>NO </b></td>  
+                <td colspan="13"><input type="text" name="A" value=""></td> 
+                B. Have you resigned from the government service during the three (3)- month period before the last election to promote /actively campaign for a national or local</p>   <br> 
+                 <td> If Yes, give details</td>
+                <br> <td><b>NO </b></td>   
+                <td colspan="13"><input type="text" name="B" value=""></td>
+        </tr>
+        <tr>
+            <td>  Have you acquired the status of an immigrant or permanent resident of another country?  <br> 
+                <td> If Yes, give details</td>
+            <br> <td><b>NO </b></td>   
+                <td colspan="13"><input type="text" name="39" value=""></td> 
+        </tr>
+
+  
+        <tr>
+            <td>Pursuant to :(a) Indigenous Peopl's Act (RA 8371); (b) Magna Carta for Disable Persons (RA 7277); and (c) Solo Parent Welfare Act of 2000 (RA 8972),please answer the following.<br>
+                 <td></td> <br>
+                A. Are you member of any indigenous group ? <br>      
+                     <td> If Yes, give details</td>
+                    <br> <td><b>NO </b></td>   
+                <td colspan="13"><input type="text" name="A" value=""></td> 
+                B.Are you a person with disability?<br>   
+                  <td> If Yes, give details</td>
+                <br> <td><b>NO </b></td>   
+                <td colspan="13"><input type="text" name="B" value=""></td>
+                C.Are you a solo parent?<br>   
+                 <td> If Yes, give details</td>
+                <br> <td><b>NO </b></td>   
+                <td colspan="13"><input type="text" name="C" value=""></td>
+        </tr>
+    </div>
+<td></td>
+<td></td>
+     <div class="page">
+    <div class="page">
+    <div class="page">
+        <table>
+        <tr>
+            <th colspan="13">REFERENCES (Person not related by consanguinity or affinity to applicant/appointee)</th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td> Name </td>
+            <td colspan="3"><input type="text" name="Name" value="N/A"></td> 
+            <td> Address </td>
+            <td colspan="3"><input type="text" name="Address" value="N/A"></td>
+            <td> Tel. No </td>
+            <td colspan="3"><input type="text" name="Telephone" value="N/A"></td>
+        </tr>
+        <tr>
+            <td> Name </td>
+            <td colspan="3"><input type="text" name="Name" value="N/A"></td> 
+            <td> Address </td>
+            <td colspan="3"><input type="text" name="Address" value="N/A"></td>
+            <td> Tel. No </td>
+            <td colspan="3"><input type="text" name="Telephone" value="N/A"></td>
+        </tr>
+        <tr>
+            <td> Name </td>
+            <td colspan="3"><input type="text" name="Name" value="N/A"></td> 
+            <td> Address </td>
+            <td colspan="3"><input type="text" name="Address" value="N/A"></td>
+            <td> Tel. No </td>
+            <td colspan="3"><input type="text" name="Telephone" value="N/A"></td>
+        </tr>
+</table>
+        <tr>
+            <td><b> I declare under oath that I have personally accomplished this Personal Data Sheet which is a true,correct and complete statement pursuant to the provisions of pertinent laws, rules and regulations of the Republic of the Philippines.</td></tr><b> 
+            <td><b>I authorize tha angency head/authorized  representative to verify/validate the contents stated herein. </b></td>
+             <td><b>I agree that any misrepresentation made in this document and its attachements shall cause the filling of administrative/criminal cases/s against me. </p></td>
+            <td colspan="3"><input type="text" name="42" value=""></td>
+        </tr>
+    <table>
+        <tr>
+            <td> <b> Government Issued ID (i.e. Password, GSIS,SSS,PRC, Driver's Licnse, etc.) PLEASE INDICATE ID Number and Date of Issuance </b> </td>
+            <td> <b> Government Issued ID </b></td>
+            <td colspan="3"><input type="text" name="ID" value="N/A"></td>
+            <td> <b>ID/ License/ Passport No. </b>  </td>
+            <td colspan="3"><input type="text" name="ID" value="N/A"></td>
+            <td><b> Date/ Place od Issuance  </b></td>
+            <td colspan="3"><input type="text" name="date" value="N/A"></td>
+        </tr>
+        <table>
+            <tr>
+                <td><b> ID picture taken within the last 6 months3.5 x 4.5 cm (Passport size) <br> With full and handwritten name tag and signature over printed name  <br> Computer generated or photocopied picture is not acceptable</b> </td>
+                <td colspan="3"><input type="text" name="ID" value="N/A"></td>
+            
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td> <b> Signature(Sign inside the box)</b> </td>
+                <td colspan="3"><input type="text" name="signature" value="N/A"></td>
+                <td><b> Date Accomplished</b></td>
+                <td colspan="3"><input type="text" name="date" value="N/A"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td> <b>Right Thumbmark </b> </td>
+                <td colspan="3"><input type="text" name="Thumbmark" value="N/A"></td>
+            </tr>
+        </table>
+        <tr>
+            <td>
+                <b>SUBSCRIBED AND SWORD to before me this __________, affiant exhibiting his/her validly issued government ID as indicate above.
+                </b></td><br> <br>
+        </tr>
+        <table>
+            <tr>
+                <th>Person Administering Oath </th>
+                <td colspan="3"><input type="text" name="Administering" value=""></td>
+              
+            </tr>
+        </table>
+    </tr>
+    </div>
+        
+    
+</body>
+</html>
+
